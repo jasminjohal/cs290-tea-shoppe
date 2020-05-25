@@ -121,6 +121,7 @@ function postData(event) {
   info.email = document.getElementById('email').value;
   info.reason = document.getElementById('reason').value;
   info.message = document.getElementById('message').value;
+  //req.open('POST', 'https://dc269a00-01dc-453f-af66-a69099c33349.mock.pstmn.io/post', true);
   req.open('POST', 'http://httpbin.org/post', true);
   req.setRequestHeader('Content-Type', 'application/json');
   req.addEventListener('load',function(){
