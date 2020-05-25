@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/6753333908.js" crossorigin="anonymous"></script>
+  <title>Jasmin's Tea Shoppe</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="img/bubble-tea.svg" id="nav-icon" alt="tea">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="menu.html">Menu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" id="menu">
+    <h1 class="header">Custom Menu</h1>
+    <a href="menu.pdf" download="menu.pdf">
+      <button type="button" name="dl-button" id="dl-button" class="btn btn-success">Download Menu</button>
+    </a>
+    <p>Pick the tea, milk, sweetness level and topping to get the perfect cup of tea for you!</p>
+    <!-- <img src="img/jts-tea.png" alt="boba tea" id="menu-img"> -->
+
+    <div id="choose-tea" class="choose">
+      <h2 class="step header">Step 1: Pick a tea base.</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card tea-card">
+              <div class="card-body">
+                <h5 class="card-title">Earl Grey</h5>
+                <p class="card-text">Black tea flavored with fragrant bergamot oil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card tea-card">
+              <div class="card-body">
+                <h5 class="card-title">Jasmine</h5>
+                <p class="card-text">Green tea scented with jasmine flowers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card tea-card">
+              <div class="card-body">
+                <h5 class="card-title">Rose</h5>
+                <p class="card-text">Herbal tea derived from the rose plant.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card tea-card">
+              <div class="card-body">
+                <h5 class="card-title">Oolong</h5>
+                <p class="card-text">Semi-oxidized tea with a roasted aroma.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card tea-card">
+              <div class="card-body">
+                <h5 class="card-title">Ginger</h5>
+                <p class="card-text">Soothing herbal tea made from fresh ginger.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card tea-card">
+              <div class="card-body">
+                <h5 class="card-title">Matcha</h5>
+                <p class="card-text">High quality green tea.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="choose-milk" class="choose">
+      <h2 class="step header">Step 2: Pick a milk.</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card milk-card" id="dairy">
+              <div class="card-body">
+                <h5 class="card-title">Dairy</h5>
+                <p class="card-text">Whole fat milk or half & half available upon request.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card milk-card" id="almond-milk">
+              <div class="card-body">
+                <h5 class="card-title">Almond Milk (+$0.25)</h5>
+                <p class="card-text"> Silk unsweetened, vanilla almond milk. Dairy-free.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card milk-card" id="oat-milk">
+              <div class="card-body">
+                <h5 class="card-title">Oat Milk (+$0.50)</h5>
+                <p class="card-text">Oatly original oat milk. Dairy-free.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card milk-card" id="no-milk">
+              <div class="card-body">
+                <h5 class="card-title">None</h5>
+                <p class="card-text">No milk. Water can be added to balance the strength of the tea.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="choose-sugar" class="choose">
+      <h2 class="step header">Step 3: Pick a sweetness level.</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card sweet-card">
+              <div class="card-body">
+                <h5 class="card-title">125%</h5>
+                <p class="card-text">Extra sweet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card sweet-card">
+              <div class="card-body">
+                <h5 class="card-title">100%</h5>
+                <p class="card-text">Fully sweet (default)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card sweet-card">
+              <div class="card-body">
+                <h5 class="card-title">75%</h5>
+                <p class="card-text">Less sweet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card sweet-card">
+              <div class="card-body">
+                <h5 class="card-title">50%</h5>
+                <p class="card-text">Half sweet</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card sweet-card">
+              <div class="card-body">
+                <h5 class="card-title">25%</h5>
+                <p class="card-text">Lightly sweet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card sweet-card">
+              <div class="card-body">
+                <h5 class="card-title">0%</h5>
+                <p class="card-text">No sugar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="choose-topping" class="choose">
+      <h2 class="step header">Step 4: Pick a topping.</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card topping-card">
+              <div class="card-body">
+                <h5 class="card-title">Tapioca</h5>
+                <p class="card-text">Boba pearls made from tapioca starch.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card topping-card">
+              <div class="card-body">
+                <h5 class="card-title">Aloe Jelly (+$0.25)</h5>
+                <p class="card-text">Jelly cubes made from aloe vera.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card topping-card">
+              <div class="card-body">
+                <h5 class="card-title">Chia Seeds</h5>
+                <p class="card-text">Healthy seeds, rich in omega-3.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card topping-card">
+              <div class="card-body">
+                <h5 class="card-title">Red Bean</h5>
+                <p class="card-text">Sweet topping made from dried red beans.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" name="order-button" id="order-button" class="btn btn-dark">Calculate Order</button>
+    <div id="warning"></div>
+  </div>
+  <div id="order"></div>
+
+  <footer>
+    <p>Connect with us:</p>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x connect-icon"></i></a>
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x connect-icon"></i></a>
+    <a href="https://www.yelp.com/"><i class="fab fa-yelp fa-2x connect-icon"></i></a>
+    <p id="footer-credit">Icons from <a href="https://fontawesome.com/" title="Flaticon">Font Awesome</a></p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

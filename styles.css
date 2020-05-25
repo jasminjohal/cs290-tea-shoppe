@@ -1,0 +1,176 @@
+/* ALL PAGES */
+.navbar {
+  text-transform: uppercase;
+  background: rgba(0,0,0,.6) !important;
+
+}
+.navbar-nav .nav-item:hover {
+  color: red !important;
+}
+
+.active a {
+  color: #28a745 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #28a745;
+}
+
+#nav-icon {
+  height: 2rem;
+}
+
+.header {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#footer-credit {
+  margin-top: 10px;
+  color: grey;
+}
+
+.connect-icon {
+  padding-left: 5px;
+  color: white;
+}
+
+.connect-icon:hover {
+  opacity: 0.5;
+}
+
+.img-credit {
+  color: red;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+/* INDEX.HTML */
+#main {
+  text-align: center;
+}
+
+#welcome {
+  margin-top: 35vh;
+  font-size: 5rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-family: 'Pacifico', cursive;
+}
+
+#subwelcome {
+  color: #dfe6e9;
+}
+
+#slide1 {
+  background-image: url('img/boba-bottles.jpg');
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+#slide2 {
+  background-image: url('img/cafe.jpg');
+}
+
+#slide3 {
+  background-image: url('img/lavender-tea.jpg');
+}
+
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MENU.HTML */
+#menu {
+  text-align: center;
+  padding: 10vh 0 5vh 0;
+  background-color: #eee;
+}
+
+#menu-img {
+  height: 300px;
+}
+
+.choose {
+  margin-top: 15px;
+}
+
+.step {
+  color: #007bff;
+}
+
+.card {
+  margin: 15px 10px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #007bff;
+}
+
+.card:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+#order-button {
+  margin-top: 20px;
+}
+
+#warning {
+  color: red;
+}
+
+#order {
+  font-size: 1.3rem;
+  background-color: white;
+  text-align: center;
+}
+
+#total-divider {
+  border-top: 1px solid black;
+  width: 300px;
+}
+
+#total {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* ABOUT.HTML */
+#about {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+#about-img {
+  height: 450px;
+}
+
+#dl-button {
+  margin-bottom: 20px;
+}
+
+.alert {
+  display: none;
+}
