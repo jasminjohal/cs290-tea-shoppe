@@ -174,3 +174,36 @@ footer {
 .alert {
   display: none;
 }
+
+/* CONTACT.HTML */
+#contact {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  background-color: #eee;
+  padding: 40px;
+}
+
+#contact .header {
+  text-align: center;
+}
+
+#success {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+#response {
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+  display: none;
+  margin: 0 auto;
+}
+
+#message-sent {
+  color: #27ae60;
+}
+
+.underlined {
+  text-decoration: underline;
+}

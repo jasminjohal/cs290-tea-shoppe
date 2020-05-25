@@ -110,6 +110,44 @@ function calculate(e) {
     var warningDiv = document.getElementById('warning');
     warningDiv.innerHTML = '✘ Please select an item in each step.';
     warningDiv.style.paddingTop = '30px';
-    console.log(warningDiv);
   }
+}
+
+function postData(event) {
+  var req = new XMLHttpRequest();
+  var info = {firstname:null, lastname:null, email:null, reason:null, message:null};
+  info.firstname = document.getElementById('firstname').value;
+  info.lastname = document.getElementById('lastname').value;
+  info.email = document.getElementById('email').value;
+  info.reason = document.getElementById('reason').value;
+  info.message = document.getElementById('message').value;
+  req.open('POST', 'http://httpbin.org/post', true);
+  req.setRequestHeader('Content-Type', 'application/json');
+  req.addEventListener('load',function(){
+    if(req.status >= 200 && req.status < 400){
+      var response = JSON.parse(req.responseText);
+      // the data property is stringified and requires parsing
+      var data = JSON.parse(response.data);
+      // displays success message and message contents to webpage
+      var successMsg = document.getElementById('message-sent');
+      successMsg.innerHTML = 'Thank you, your message was sent! We will reply as soon as possible.';
+      var responseDiv = document.getElementById('response');
+      responseDiv.innerHTML = `<em>Message Content</em><br>
+        <span class="underlined">First Name</span>: ${data.firstname}<br>
+        <span class="underlined">Last Name</span>: ${data.lastname}<br>
+        <span class="underlined">Email</span>: ${data.email}<br>
+        <span class="underlined">Reason</span>: ${data.reason}<br>
+        <span class="underlined">Message</span>: ${data.message}`;
+      responseDiv.style.display = 'block';
+    } else {
+      console.log("Error: " + req.statusText);
+    }});
+  req.send(JSON.stringify(info));
+  event.preventDefault();
+}
+
+var form = document.getElementById('post-form');
+
+if (form) {
+  form.addEventListener('submit', postData);
 }
