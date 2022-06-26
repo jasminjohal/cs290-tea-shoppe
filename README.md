@@ -1,6 +1,6 @@
 # Jasmin's Tea Shoppe
 
-View the live website [here](https://jasminjohal.github.io/cs290-project/index.html).
+View the live website [here](https://jasminjohal.github.io/cs290-tea-shoppe/index.html).
 
 ## About
 
