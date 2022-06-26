@@ -1,8 +1,7 @@
 /* ALL PAGES */
 .navbar {
   text-transform: uppercase;
-  background: rgba(0,0,0,.6) !important;
-
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 .navbar-nav .nav-item:hover {
   color: red !important;
@@ -24,13 +23,13 @@
 }
 
 .header {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 footer {
   background-color: #212529;
   color: white;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -40,8 +39,8 @@ footer {
 }
 
 .connect-icon {
-  padding-left: 5px;
-  color: white;
+  height: 50px;
+  margin-left: 10px;
 }
 
 .connect-icon:hover {
@@ -66,7 +65,7 @@ footer {
   font-size: 5rem;
   color: white;
   letter-spacing: 0.3rem;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 #subwelcome {
@@ -74,16 +73,16 @@ footer {
 }
 
 #slide1 {
-  background: url('img/boba-bottles.jpg') no-repeat center center;
-  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  background: url("img/boba-bottles.jpg") no-repeat center center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
 
 #slide2 {
-  background: url('img/cafe.jpg') no-repeat center center;
+  background: url("img/cafe.jpg") no-repeat center center;
 }
 
 #slide3 {
-  background: url('img/lavender-tea.jpg') no-repeat center center;
+  background: url("img/lavender-tea.jpg") no-repeat center center;
 }
 
 .carousel-inner .carousel-item {
@@ -94,7 +93,6 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
 
 /* MENU.HTML */
 #menu {
