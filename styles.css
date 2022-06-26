@@ -74,27 +74,27 @@ footer {
 }
 
 #slide1 {
-  background-image: url('img/boba-bottles.jpg');
+  background: url('img/boba-bottles.jpg') no-repeat center center;
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
 
 #slide2 {
-  background-image: url('img/cafe.jpg');
+  background: url('img/cafe.jpg') no-repeat center center;
 }
 
 #slide3 {
-  background-image: url('img/lavender-tea.jpg');
+  background: url('img/lavender-tea.jpg') no-repeat center center;
 }
 
-.carousel-inner {
-  height: 100%;
-}
-.carousel-item {
+.carousel-inner .carousel-item {
+  width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
+
 
 /* MENU.HTML */
 #menu {
