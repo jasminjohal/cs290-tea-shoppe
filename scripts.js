@@ -1,8 +1,3 @@
-$(function () {
-  // $("#header").load("header.html");
-  $("footer").load("footer.html");
-});
-
 // MENU.HTML
 
 // remove style from all cards in a specific grouping
